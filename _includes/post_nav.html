@@ -1,6 +1,10 @@
 <div id="post-nav">
   {% if page.previous.url %}
-  <div id="previous-post" class="post-nav-post">
+  <div id="previous-post" class="post-nav-post" 
+    {% if page.previous.thumbnail %}
+      style="background-image: url('{{ site.baseurl }}/{{ page.previous.thumbnail }}')"
+    {% endif %}
+  >
       <p>{{ site.theme_settings.str_previous_post }}</p>
       <a href="{{ site.baseurl }}{{ page.previous.url }}">
         {{ page.previous.title }}
@@ -8,7 +12,11 @@
   </div>
   {% endif %}
   {% if page.next.url %}
-  <div id="next-post" class="post-nav-post">
+  <div id="next-post" class="post-nav-post"
+    {% if page.next.thumbnail %}
+      style="background-image: url('{{ site.baseurl }}/{{ page.next.thumbnail }}')"
+    {% endif %}
+  >
       <p>{{ site.theme_settings.str_next_post }}</p>
       <a href="{{ site.baseurl }}{{ page.next.url }}">
         {{ page.next.title }}

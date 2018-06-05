@@ -1,35 +1,34 @@
 # SITE CONFIGURATION
-baseurl: "/Type-on-Strap"
-url: "https://sylhare.github.io"
-title: Type on Strap # site's title
+baseurl: ""
+url: "https://whgksdyd112.github.io"
+title: Whgksdyd112's blog # site's title
 description: "A website with blog posts and pages" # used by search engines
 
 
 # THEME-SPECIFIC CONFIGURATION
 theme_settings:
   # Meta
-  title: Type on Strap # blog's title
+  title: Whgksdyd112's blog # blog's title
   avatar: assets/img/triangle.svg
   favicon: assets/favicon.ico
   gravatar: # Email MD5 hash
 
   # Header and footer text
   header_text: > #two or three lines to describe your site
-     <p>Change header text in <code>_config.yml</code> <br> to update this feature.</p>
+     <p class="header-text">Whgksdyd112's blog</p>
   header_text_feature_image: assets/img/pexels/triangular.jpeg
   footer_text: >
-   Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/sylhare/Type-on-Strap">Type on Strap</a>
 
   # Icons
-  rss: true  # Make sure you created a feed.xml with feed.xml layout
+  rss: false  # Make sure you created a feed.xml with feed.xml layout
   email_address: # Full email address, e.g. "sam@example.com"
   behance:
   bitbucket:
   dribbble:
-  facebook:
+  facebook: 
   flickr:
   gitlab:
-  github: "sylhare"
+  github: "whgksdyd112"
   google_plus:
   instagram:
   keybase:
@@ -60,7 +59,7 @@ theme_settings:
 
   # Scripts / Features 
   google_analytics: # Tracking ID, e.g. "UA-000000-01"
-  disqus_shortname:
+  disqus_shortname: https-whgksdyd112-github-io
   katex: true # Enable if using math markup
   
   special_page:
@@ -96,7 +95,7 @@ theme_settings:
   
 # PAGINATION
 paginate: 5
-paginate_path: "blog/page:num"
+paginate_path: "blog/page/:num"
 
 
 # PORTFOLIO

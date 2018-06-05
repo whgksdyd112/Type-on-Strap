@@ -2,3 +2,120 @@
 ---
 
 @import "type-on-strap";
+
+.posts {
+	max-width: 940px;
+	margin: 3% auto 0 auto;
+	background: white;
+}
+
+.home {
+	background: #eee;
+}
+
+.pagination {
+	padding: 4% 20% 4% 20%;
+  text-align: center;
+}
+
+.clear {
+	font-weight: bold;
+}
+
+.header-text {	
+	font-weight: bold;
+	font-size: 50px;
+	font-family: sans-serif;
+}
+
+body {
+	background: #eee;
+}
+
+article {
+	padding: 0 0 6% 0;
+	justify-content: center;
+  align-items: center;
+}
+
+article > * {
+	background: white;
+	max-width: 940px;
+	margin: auto;
+}
+
+article header {
+	margin: 3% auto 0 auto;
+	padding: 6%;
+	background: rgba(52,56,81,0.8);
+}
+
+footer {
+	display: block;
+}
+
+#post-nav {
+	float: unset;
+	display: table;
+	padding: 0;
+}
+
+.post-nav-post {
+	width: 50%;
+	padding: 1.5% 1.5% 10%;    
+	background-size: cover;
+	display: table-cell;
+}
+
+@media only screen and (max-width: 720px) {
+	.post-nav-post {
+			display: block;
+			width: 100%;
+	}
+}
+
+.posts .post-teaser {
+	width: 80%;
+	margin: auto;
+	display: block;
+	padding: 4% 4%;
+}
+
+.comments {
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+	margin: auto;
+	width: 100%;
+	max-width: 940px;
+	padding: 4%;
+	float: unset;
+}
+
+.post-content {
+	padding: 40px;
+}
+.feature-image footer {
+	padding: 10px;
+}
+
+.feature-image .post-content {
+	padding: 40px;
+}
+
+.feature-image {
+	padding: 0 0 6% 0;
+}
+
+#post-nav #next-post {
+	background-color: rgba(175, 180, 216, 0.8);
+	float: unset;	
+}
+
+#post-nav #previous-post {
+	background-color: rgba(179, 137, 150, 0.56);
+	float: unset;
+}
+
+#post-nav p {
+	color: #eee;
+	font-size: 12px;
+}
