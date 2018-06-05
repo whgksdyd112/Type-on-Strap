@@ -37,6 +37,9 @@ layout: default
             </a>-->
           </div>
       </span>
+      <!-- Displays the list of tags-->
+      {% assign tags = post.tags | join:'|'  %}
+      {% include home_tags_list.html tags=tags %}
     </div>
     {% endfor %}   
 
