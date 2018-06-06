@@ -13,9 +13,9 @@ layout: default
   <div class="posts">
     {% for post in paginator.posts %}
     <div class="post-teaser">
-      {% if post.thumbnail %} 
+      {% if post.feature-img %} 
       <div class="post-img">
-         <img src="{{ site.baseurl }}/{{ post.thumbnail }}">
+         <img src="{{ site.baseurl }}/{{ post.feature-img }}">
       </div>
       {% endif %}
       <span>
@@ -30,7 +30,7 @@ layout: default
             </p>
           </header>
           <div class="excerpt">
-              {{ post.excerpt | strip_html | escape }}
+              {{ post.description | strip_html | escape }}
             <!--{{ post.content | strip_html | truncate: "250" }}-->
             <!--<a class="button" href="{{ post.url | prepend: site.baseurl }}">
               {{ site.theme_settings.str_continue_reading }}

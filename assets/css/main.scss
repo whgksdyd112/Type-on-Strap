@@ -26,6 +26,7 @@
 
 body {
 	background: #eee;
+	font-family: 'Nanum Gothic', sans-serif;
 }
 
 article {
@@ -100,6 +101,8 @@ footer {
 
 .post-content {
 	padding: 40px;
+	font-size: 16px;
+	font-family: sans-serif;
 }
 .feature-image footer {
 	padding: 10px;
@@ -162,4 +165,28 @@ footer {
 	background-size: cover;
 	cursor: pointer;
 	padding: 15px;
-  }
+}
+
+code.highlighter-rouge {
+    padding: 3px 5px;
+    margin: 0 3px;
+    border: 0;
+    background-color: #efefef;
+	font-size: 14px;
+	font-family: 'Nanum Gothic', sans-serif;
+}
+
+.highlight {
+	font-size: 13px;
+	font-family: 'Nanum Gothic', sans-serif;
+}
+
+.excerpt {
+    font-size: 16px;
+}
+
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+.post-content p {
+    line-height: 27px;
+}
