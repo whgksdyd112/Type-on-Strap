@@ -1,21 +1,21 @@
 # SITE CONFIGURATION
 baseurl: ""
-url: "https://whgksdyd112.github.io"
-title: Whgksdyd112's blog # site's title
+url: "https://Joddev.github.io"
+title: Joddev's blog # site's title
 description: "A website with blog posts and pages" # used by search engines
 
 
 # THEME-SPECIFIC CONFIGURATION
 theme_settings:
   # Meta
-  title: Whgksdyd112's blog # blog's title
+  title: Joddev's blog # blog's title
   avatar: assets/img/triangle.svg
   favicon: assets/favicon.ico
   gravatar: # Email MD5 hash
 
   # Header and footer text
   header_text: > #two or three lines to describe your site
-     <p class="header-text">Whgksdyd112's blog</p>
+     <p class="header-text">Joddev's blog</p>
   header_text_feature_image: assets/img/pexels/triangular.jpeg
   footer_text: >
 
@@ -28,7 +28,7 @@ theme_settings:
   facebook: 
   flickr:
   gitlab:
-  github: "whgksdyd112"
+  github: "Joddev"
   google_plus:
   instagram:
   keybase:
