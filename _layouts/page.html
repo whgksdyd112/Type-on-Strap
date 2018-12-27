@@ -18,6 +18,8 @@ layout: default
     
   <!-- Tag list for portfolio -->
   {% capture tag_list %}{{ page.tags | join: "|"}}{% endcapture %}
-  {% include tags_list.html tags=tag_list %}
+  {% if tag_list.size > 0 %}
+    {% include tags_list.html tags=tag_list %}
+  {% endif %}
     
 </article>

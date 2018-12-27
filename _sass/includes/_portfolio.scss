@@ -1,5 +1,5 @@
 .portfolio-link {
-    display: block;
+    display: inline-block;
     position: relative;
     margin: 0 auto;
     max-width: 400px;
@@ -41,10 +41,8 @@
 }
 
 .portfolio-grid {
-  display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-
 }
 .portfolio-cell {
   flex: 0 0 32%;

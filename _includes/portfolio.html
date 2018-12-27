@@ -1,16 +1,28 @@
 <!-- Portfolio Grid Section -->
 
-<div class="portfolio-grid">
+<table class="portfolio-table">
     {% for item in site.portfolio %}
-    <div class="portfolio-cell">
-        <a href="{{ site.baseurl }}{{ item.url }}" class="portfolio-link" data-keyboard="true">
-            <div class="caption" title="{{ item.title }}">
-                <div class="caption-content">
-                    <i class="fa fa-search-plus fa-3x"></i>
-                </div>
-            </div>
+    <tr>
+        <td style="width: 30%;">
             <img src="{{ site.baseurl }}/{{ item.img }}" class="" alt="">
-        </a>
-    </div>
+        </td>
+        <td style="width: 70%;">
+            <div class="title">{{ item.title }}</div>
+            <div>{{ item.description }}</div>
+            <div>{{ item.role }}</div>
+            {% if item.link %}
+                <a href="{{ item.link }}">link</a>
+            {% endif %}
+            <div>
+                {% if item.tags.size > 0 %}
+                <div class="tag-list" style="padding-bottom:0; margin-top:0.1em;">
+                    {% for tag in item.tags %}
+                    <div class="button" style="padding: 0.3em 0.5em; margin: 0.1em;">{{ tag }}</div>
+                    {% endfor %}
+                </div>
+                {% endif %}
+            </div>
+        </td>
+    </tr>
     {% endfor %}
-</div>
+</table>
