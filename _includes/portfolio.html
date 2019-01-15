@@ -1,5 +1,9 @@
 <!-- Portfolio Grid Section -->
-
+<div id="image-popup" class="overlay">
+    <div class="img-show">
+        <div id="image-gallery" class="slider" style="width:300px;"></div>
+    </div>
+</div>
 <table class="portfolio-table">
     {% for item in site.portfolio %}
     <tr>
@@ -10,14 +14,21 @@
             <div class="title">{{ item.title }}</div>
             <div>{{ item.description }}</div>
             <div>{{ item.role }}</div>
-            {% if item.link %}
-                <a href="{{ item.link }}">link</a>
-            {% endif %}
+            <div>
+                {% if item.link %}
+                    <div class="show page" onclick="window.open('{{ item.link }}')">PAGE</div>
+                {% endif %}
+                {% if item.attach && item.attach.size > 0 %}
+                    {% assign images = item.attach | join: "','" | append: "']" | prepend: "['" %}
+                    <div class="show slide" onclick="showImageGallery({{ images }})">SLIDE</div>
+                {% endif %}
+            </div>
             <div>
                 {% if item.tags.size > 0 %}
                 <div class="tag-list" style="padding-bottom:0; margin-top:0.1em;">
+                    <span style="margin-left:5px;">stack:</span>
                     {% for tag in item.tags %}
-                    <div class="button" style="padding: 0.3em 0.5em; margin: 0.1em;">{{ tag }}</div>
+                    <div class="button">{{ tag }}</div>
                     {% endfor %}
                 </div>
                 {% endif %}
