@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Apache Storm toplogy 이해하기 - 1
+title: Storm topology 이해하기 - 1
 description: Storm tutorial
 feature-img: 'assets/img/post/apache-storm.png'
 tags: [Java, Storm]
