@@ -128,7 +128,7 @@ public class DstJava8TimeTest {
    System.out.println(zdt.minusHours(1));  // 2019-09-07T23:00-04:00[America/Santiago]
    ```
 
-`java.time`의 경우 java 버전이 릴리즈 됨에 따라 약간의 변동 사항이 생기기도 하는 것 같으니, 유의 해서 써야겠다. 이와 관련 하여서는 좀 더 찾아봐야 할 것 같다.
+`java.time`의 경우 java 버전이 릴리즈 됨에 따라 타임존이 업데이트 된다. java 버전에 따라 다른 타임존 상황이 적용될 수 있으니 주의하여 사용하도록 하자. joda time library 경우에는 library 버전에 따라 타임존이 업데이트 되므로, 환경별 자바 버전에 대해 달라지는 일은 없을 것이다.
 
 ### References
 
