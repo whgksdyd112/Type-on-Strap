@@ -21,6 +21,8 @@ Could not find method providedCompile() for arguments [{group=org.projectlombok,
 
 ### Quick Solution
 
+아래의 3가지 방법 중 하나를 선택해서, 사용하면 위의 에러를 해결할 수 있다.
+
 1. add '*war*' plugin
 
    ```groovy
