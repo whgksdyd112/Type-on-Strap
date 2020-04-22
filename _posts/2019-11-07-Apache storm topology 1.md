@@ -8,7 +8,7 @@ tags: [Java, Storm]
 
 ### Apache Storm이란?
 
-![Apache Storm flor]({{ site.baseurl }}/assets/img/post/storm-flow.png)
+![Apache Storm flow]({{ site.baseurl }}/assets/img/post/storm-flow.png)
 
 Apache Storm은 실시간으로 대용량 데이터를 분산 처리하는 시스템이다.
 
