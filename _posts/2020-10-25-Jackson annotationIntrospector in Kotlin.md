@@ -128,7 +128,9 @@ class MaskedLoggingIntrospectorTest {
 
 ### References
 
-https://docs.aws.amazon.com/cli/latest/reference/cloudwatch/put-metric-data.html
+https://github.com/FasterXML/jackson-docs/wiki/AnnotationIntrospector
 
-https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/using-metric-math.html
+https://fasterxml.github.io/jackson-databind/javadoc/2.9/com/fasterxml/jackson/databind/AnnotationIntrospector.html
+
+https://stackoverflow.com/questions/34965201/customize-jackson-objectmapper-to-read-custom-annotation-and-mask-fields-annotat/37538768
 
